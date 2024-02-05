@@ -1,0 +1,47 @@
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\EX12_DataLogger\bin\x64\Debug\EX12_DataLogger.exe.config
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\EX12_DataLogger\bin\x64\Debug\EX12_DataLogger.exe
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\EX12_DataLogger\bin\x64\Debug\EX12_DataLogger.pdb
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\EX12_DataLogger\bin\x64\Debug\CMO.dll
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.DataLogger.resources
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.Properties.Resources.resources
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.csproj.GenerateResource.cache
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.csproj.CopyComplete
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.exe
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.pdb
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.csproj.CoreCompileInputs.cache
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.csprojAssemblyReference.cache
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger\bin\x64\Debug\EX12_DataLogger.exe.config
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger\bin\x64\Debug\EX12_DataLogger.exe
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger\bin\x64\Debug\EX12_DataLogger.pdb
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.DataLogger.resources
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.Properties.Resources.resources
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.csproj.GenerateResource.cache
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.csproj.CopyComplete
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.exe
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.pdb
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger\obj\x64\Debug\EX12_DataLogger.csproj.CoreCompileInputs.cache
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger\bin\x64\Debug\CMO.dll
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy (3)\bin\x64\Debug\EX12_DataLogger.exe.config
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy (3)\bin\x64\Debug\EX12_DataLogger.exe
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy (3)\bin\x64\Debug\EX12_DataLogger.pdb
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy (3)\bin\x64\Debug\CMO.dll
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy (3)\obj\x64\Debug\EX12_DataLogger.csprojAssemblyReference.cache
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy (3)\obj\x64\Debug\EX12_DataLogger.DataLogger.resources
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy (3)\obj\x64\Debug\EX12_DataLogger.Properties.Resources.resources
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy (3)\obj\x64\Debug\EX12_DataLogger.csproj.GenerateResource.cache
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy (3)\obj\x64\Debug\EX12_DataLogger.csproj.CoreCompileInputs.cache
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy (3)\obj\x64\Debug\EX12_DataLogger.csproj.CopyComplete
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy (3)\obj\x64\Debug\EX12_DataLogger.exe
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy (3)\obj\x64\Debug\EX12_DataLogger.pdb
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy\obj\x64\Debug\EX12_DataLogger.csprojAssemblyReference.cache
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy\obj\x64\Debug\EX12_DataLogger.DataLogger.resources
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy\obj\x64\Debug\EX12_DataLogger.Properties.Resources.resources
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy\obj\x64\Debug\EX12_DataLogger.csproj.GenerateResource.cache
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy\obj\x64\Debug\EX12_DataLogger.csproj.CoreCompileInputs.cache
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy\obj\x64\Debug\EX12_DataLogger.exe
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy\obj\x64\Debug\EX12_DataLogger.pdb
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy\bin\x64\Debug\EX12_DataLogger.exe.config
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy\bin\x64\Debug\EX12_DataLogger.exe
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy\bin\x64\Debug\EX12_DataLogger.pdb
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy\bin\x64\Debug\CMO.dll
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX12_DataLogger - Copy\obj\x64\Debug\EX12_DataLogger.csproj.CopyComplete
