@@ -1,0 +1,216 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using CMLCOMLib;
+
+namespace PvtConstAccelTrj
+{
+    public partial class PvtConstAccelTrj : Form
+    {
+        //***************************************************
+        //
+        //  CANOpen Network
+        //
+        //***************************************************
+        const int CAN_ADDRESS_1 = 1;
+        const int CAN_ADDRESS_2 = 2;
+        canOpenObj canOpen;
+
+        const int numberOfDimensions = 2;
+        const int numberOfPvtPoints = 400;
+
+        const int LOG_ALL = 99;
+        CopleyMotionLibraryObj cmlObj;
+
+        AmpObj[] ampArray = new AmpObj[numberOfDimensions];
+        LinkageObj linkageObj;
+
+        PvtConstAccelTrjObj pvtTrjObj;
+
+        //Create a delegate to close down the application in a thread safe way
+        delegate void CloseApp();
+
+        public PvtConstAccelTrj()
+        {
+            InitializeComponent();
+        }
+
+        private void PvtConstAccelTrj_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                //**************************************************************************
+                //* Turn on logging by setting a CML object
+                //**************************************************************************
+                cmlObj = new CopleyMotionLibraryObj();
+                cmlObj.DebugLevel = LOG_ALL;
+                
+                for(int i = 0; i < numberOfDimensions; i++)
+                {
+                    ampArray[i] = new AmpObj();
+                }
+
+                linkageObj = new LinkageObj();
+
+                pvtTrjObj = new PvtConstAccelTrjObj();
+
+                //***************************************************
+                //
+                //  CANOpen Network
+                //
+                //***************************************************
+                canOpen = new canOpenObj();
+                //
+                //**************************************************************************
+                //* The next two lines of code are optional. If no bit rate is specified,
+                //* then the default bit rate (1 Mbit per second) is used.  If no port name
+                //* is specified, then CMO will use the first supported CAN card found and
+                //* use channel 0 of that card.
+                //**************************************************************************
+                // Set the bit rate to 1 Mbit per second
+                canOpen.BitRate = CML_BIT_RATES.BITRATE_1_Mbit_per_sec;
+                // Indicate that channel 0 of a Copley CAN card should be used
+                canOpen.PortName = "copley0";
+                                
+                //***************************************************
+                //* Initialize the CAN card and network
+                //***************************************************
+                canOpen.Initialize();
+                //***************************************************
+                //* Initialize the amplifier
+                //***************************************************
+                ampArray[0].Initialize(canOpen, CAN_ADDRESS_1);
+                ampArray[1].Initialize(canOpen, CAN_ADDRESS_2);
+                linkageObj.Initialize(ampArray);                
+
+                // initialize the pvt trajectory with 2 axes.
+                pvtTrjObj.Init(2);
+            }
+            catch (Exception ex)
+            {
+                DisplayError(ex);
+            }
+        }
+
+        // user clicks the start PVT move button in GUI.
+        private void StartPvtMoveButton_Click(object sender, EventArgs e)
+        {
+            // create a multidimensional array of position data
+            double[,] positionDataArray = new double[numberOfDimensions, numberOfPvtPoints];
+
+            // load the starting positions into each axis of the multidimensional array
+            for (int i = 0; i < numberOfDimensions; i++)
+            {
+                //positionDataArray[i, 0] = ampArray[i].PositionActual;
+                positionDataArray[i, 0] = 0.0;
+            }
+
+            // create an empty array to store the time data (time between each PVT point).
+            int[] timeDataArray = new int[numberOfPvtPoints];
+
+            // load the positions into the multidimensional array
+            for(int i = 0; i < numberOfDimensions; i++)
+            {
+                // start at index 1 since the actual motor position is at index 0.
+                for(int j = 1; j < numberOfPvtPoints; j++)
+                {
+                    positionDataArray[i, j] = positionDataArray[i, j - 1] + 100;
+                }
+            }
+
+            // load data into the time array.
+            // first half of the move will be slower.
+            for(int i = 0; i < numberOfPvtPoints/2; i++)
+            {
+                timeDataArray[i] = 50; // milliseconds
+            }
+            // second half of the move will be faster.
+            for(int i = numberOfPvtPoints/2; i < numberOfPvtPoints; i++)
+            {
+                timeDataArray[i] = 25; // milliseconds
+            }
+
+            // create a temporary array for loading the pvt points
+            double[] arrayTemp = new double[numberOfDimensions];
+            for (int i = 0; i < numberOfPvtPoints; i++)
+            {
+                // copy the position data to the temp array.
+                for(int j = 0; j < numberOfDimensions; j++)
+                {
+                    arrayTemp[j] = positionDataArray[j, i];
+                }
+
+                // call the AddPvtPoint method to add the PVT point to the trajectory.
+                pvtTrjObj.AddPvtPoint(arrayTemp, timeDataArray[i]);
+            }
+
+            //List<double> xPos = new List<double>();
+            //List<double> yPos = new List<double>();
+            //List<double> xVel = new List<double>();
+            //List<double> yVel = new List<double>();
+            //List<int> times = new List<int>();
+
+            //double[] posArr = new double[numberOfDimensions];
+            //double[] velArr = new double[numberOfDimensions];
+            //int timeVal = 0;
+
+            //for (int i = 0; i < numberOfPvtPoints; i++)
+            //{
+            //    pvtTrjObj.GetPvtData(posArr, velArr, ref timeVal, i);
+            //    xPos.Add(posArr[0]);
+            //    yPos.Add(posArr[1]);
+            //    xVel.Add(velArr[0]);
+            //    yVel.Add(velArr[1]);
+            //    times.Add(timeVal);
+            //}
+
+            // execute the trajectory move.
+            linkageObj.SendPvtConstAccelTrj(pvtTrjObj, true);
+
+            // wait for the move to finish
+            linkageObj.WaitMoveDone(-1);
+        }
+
+        private void PvtConstAccelTrj_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // disable all axis before closing
+            for(int i = 0; i < ampArray.Length; i++)
+            {
+                ampArray[i].Disable();
+            }
+        }
+
+        public void DisplayError(Exception ex)
+        {
+            DialogResult errormsgbox;
+            errormsgbox = MessageBox.Show("Error Message: " + ex.Message + "\n" + "Error Source: "
+                + ex.Source, "CMO Error", MessageBoxButtons.OKCancel);
+            if (errormsgbox == DialogResult.Cancel)
+            {
+                // it is possible that this method was called from a thread other than the 
+                // GUI thread - if this is the case we must use a delegate to close the application.
+                //Dim d As New CloseApp(AddressOf ThreadSafeClose)
+                CloseApp d = new CloseApp(ThreadSafeClose);
+                this.Invoke(d);
+            }
+        }
+        public void ThreadSafeClose()
+        {
+            //If the calling thread is different than the GUI thread, then use the
+            //delegate to close the application, otherwise call close() directly
+            if (this.InvokeRequired)
+            {
+                CloseApp d = new CloseApp(ThreadSafeClose);
+                this.Invoke(d);
+            }
+            else
+                Close();
+        }
+    }
+}
