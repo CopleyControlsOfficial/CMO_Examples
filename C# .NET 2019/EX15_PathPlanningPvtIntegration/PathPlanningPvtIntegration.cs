@@ -1,35 +1,17 @@
-﻿//  Example 13 PathPlanning Rev 0
+﻿//  Example 15 PathPlanningPvtIntegration
 //
-// This program demonstrates how to use path planning in a 
-// two axis machine. Path planning allows the user to plan
-// a two dimensional path using the path planning object.
-// Once created, the object contains the following methods:
-//
-//    SetStartingPos: set the two dimensional starting
-//    position for the path.
-//
-//    AddLine: add a two dimensional line to the path. The
-//    method has two overloads. One takes in a double that 
-//    is applied to the current direction of travel. The 
-//    other takes a two dimensional array that is used as 
-//    the destination (endpoint) of the move.
-//
-//    AddArc: add an arc to the path. The method has two
-//    overloads. One takes a double as the radius and a 
-//    double as the angle in radians. The radius is applied
-//    in the current direction of motion. The second 
-//    overload takes a two dimensional center point of the
-//    arc and a double as the angle in radians.
-//
-//    Pause: add a time delay in second to the path.
-//    
-//    PlayPath: retrieve the current commanded position
-//    and velocity of the path. If the path is reset using
-//    the reset method, PlayPath can be used in a while
-//    loop to print the entire path.
-//
-//    There are other methods used to set up the trajectory
-//    limits. See CMO manual for details.
+// This program demonstrates how to use a path planning object
+// integrated with a PVT object in CMO to control a two-axis 
+// machine. Path planning allows the user to plan a two 
+// dimensional path using the path planning object's AddLine
+// and AddArc methods. After the user creates the path, the 
+// positions are extracted using PlayPath method. These same 
+// positions are then injected into a PVT object, which 
+// calculates velocities using Copley's PVT continuous 
+// acceleration algorithm. The end result is a refined PVT
+// trajectory resulting in smooth motion. See the
+// findConstAccelTrj method in this example, which demonstrates 
+// this procedure. 
 //
 // This program assumes the following axis configuration:
 // 1. Upon startup it will enable one axis at Can Node ID 1 and
@@ -633,7 +615,7 @@ namespace EX13_PathPlanning
 
         }
 
-        // fill the empty pvt trajectory with constant velocity values.
+        // fill the empty pvt trajectory with calculated velocity values.
         private void findConstAccelTrj(ref PathPlanningObj pathObj, ref PvtConstAccelTrjObj pvtTraj) {
 
             // empty arrays for positions and velocities
