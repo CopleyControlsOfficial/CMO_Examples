@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EX4_Linkage", "EX4_Linkage.vbproj", "{F8268F5E-A3BE-4E5C-B03C-F7B5835B4D09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8268F5E-A3BE-4E5C-B03C-F7B5835B4D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8268F5E-A3BE-4E5C-B03C-F7B5835B4D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8268F5E-A3BE-4E5C-B03C-F7B5835B4D09}.Debug|x64.ActiveCfg = Debug|x64
+		{F8268F5E-A3BE-4E5C-B03C-F7B5835B4D09}.Debug|x64.Build.0 = Debug|x64
+		{F8268F5E-A3BE-4E5C-B03C-F7B5835B4D09}.Debug|x86.ActiveCfg = Debug|x86
+		{F8268F5E-A3BE-4E5C-B03C-F7B5835B4D09}.Debug|x86.Build.0 = Debug|x86
+		{F8268F5E-A3BE-4E5C-B03C-F7B5835B4D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8268F5E-A3BE-4E5C-B03C-F7B5835B4D09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8268F5E-A3BE-4E5C-B03C-F7B5835B4D09}.Release|x64.ActiveCfg = Release|x64
+		{F8268F5E-A3BE-4E5C-B03C-F7B5835B4D09}.Release|x64.Build.0 = Release|x64
+		{F8268F5E-A3BE-4E5C-B03C-F7B5835B4D09}.Release|x86.ActiveCfg = Release|x86
+		{F8268F5E-A3BE-4E5C-B03C-F7B5835B4D09}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3F4237B-6CA6-4937-BD40-0CCEF27E95E4}
+	EndGlobalSection
+EndGlobal
