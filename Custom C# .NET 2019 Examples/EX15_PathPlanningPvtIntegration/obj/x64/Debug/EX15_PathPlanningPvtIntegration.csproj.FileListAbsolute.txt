@@ -1,0 +1,12 @@
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX15_PathPlanningPvtIntegration\bin\x64\Debug\EX13_PathPlanning.exe.config
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX15_PathPlanningPvtIntegration\bin\x64\Debug\EX13_PathPlanning.exe
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX15_PathPlanningPvtIntegration\bin\x64\Debug\EX13_PathPlanning.pdb
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX15_PathPlanningPvtIntegration\bin\x64\Debug\CMO.dll
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX15_PathPlanningPvtIntegration\obj\x64\Debug\EX15_PathPlanningPvtIntegration.csproj.AssemblyReference.cache
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX15_PathPlanningPvtIntegration\obj\x64\Debug\EX13_PathPlanning.PathPlanningPvtIntegration.resources
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX15_PathPlanningPvtIntegration\obj\x64\Debug\EX13_PathPlanning.Properties.Resources.resources
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX15_PathPlanningPvtIntegration\obj\x64\Debug\EX15_PathPlanningPvtIntegration.csproj.GenerateResource.cache
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX15_PathPlanningPvtIntegration\obj\x64\Debug\EX15_PathPlanningPvtIntegration.csproj.CoreCompileInputs.cache
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX15_PathPlanningPvtIntegration\obj\x64\Debug\EX15_Pat.01571F1E.Up2Date
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX15_PathPlanningPvtIntegration\obj\x64\Debug\EX13_PathPlanning.exe
+C:\Users\aredamonti\Documents\Visual Studio 2019\Projects\CMO C# Examples\EX15_PathPlanningPvtIntegration\obj\x64\Debug\EX13_PathPlanning.pdb
