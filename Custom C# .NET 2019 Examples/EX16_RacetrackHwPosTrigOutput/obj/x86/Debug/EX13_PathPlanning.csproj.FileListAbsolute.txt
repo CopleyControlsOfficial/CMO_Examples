@@ -1,0 +1,12 @@
+C:\CopleyJavaSoftware\CopleyMotionObjects\trunk\Examples\C# 2019 Examples\EX13_PathPlanning\bin\x86\Debug\EX13_PathPlanning.exe.config
+C:\CopleyJavaSoftware\CopleyMotionObjects\trunk\Examples\C# 2019 Examples\EX13_PathPlanning\bin\x86\Debug\EX13_PathPlanning.exe
+C:\CopleyJavaSoftware\CopleyMotionObjects\trunk\Examples\C# 2019 Examples\EX13_PathPlanning\bin\x86\Debug\EX13_PathPlanning.pdb
+C:\CopleyJavaSoftware\CopleyMotionObjects\trunk\Examples\C# 2019 Examples\EX13_PathPlanning\bin\x86\Debug\CMO.dll
+C:\CopleyJavaSoftware\CopleyMotionObjects\trunk\Examples\C# 2019 Examples\EX13_PathPlanning\obj\x86\Debug\EX13_PathPlanning.csprojAssemblyReference.cache
+C:\CopleyJavaSoftware\CopleyMotionObjects\trunk\Examples\C# 2019 Examples\EX13_PathPlanning\obj\x86\Debug\EX13_PathPlanning.PathPlanning.resources
+C:\CopleyJavaSoftware\CopleyMotionObjects\trunk\Examples\C# 2019 Examples\EX13_PathPlanning\obj\x86\Debug\EX13_PathPlanning.Properties.Resources.resources
+C:\CopleyJavaSoftware\CopleyMotionObjects\trunk\Examples\C# 2019 Examples\EX13_PathPlanning\obj\x86\Debug\EX13_PathPlanning.csproj.GenerateResource.cache
+C:\CopleyJavaSoftware\CopleyMotionObjects\trunk\Examples\C# 2019 Examples\EX13_PathPlanning\obj\x86\Debug\EX13_PathPlanning.csproj.CoreCompileInputs.cache
+C:\CopleyJavaSoftware\CopleyMotionObjects\trunk\Examples\C# 2019 Examples\EX13_PathPlanning\obj\x86\Debug\EX13_PathPlanning.csproj.CopyComplete
+C:\CopleyJavaSoftware\CopleyMotionObjects\trunk\Examples\C# 2019 Examples\EX13_PathPlanning\obj\x86\Debug\EX13_PathPlanning.exe
+C:\CopleyJavaSoftware\CopleyMotionObjects\trunk\Examples\C# 2019 Examples\EX13_PathPlanning\obj\x86\Debug\EX13_PathPlanning.pdb
