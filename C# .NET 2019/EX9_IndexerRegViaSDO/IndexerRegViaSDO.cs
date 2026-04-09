@@ -167,8 +167,8 @@ namespace EX9_IndexerRegViaSDO
             short ObjectID;
             short SubIndex;
 
-            //CAN object ID for the Indexer Registers is 0x2600 (9728 decimal) 
-            ObjectID = 9728;
+            //CAN object ID for the Indexer Registers is 0x2600
+            ObjectID = 0x2600;
 
             //Each sub index of this object contains a register value.  Sub index 1 contains the value in register 0.
             SubIndex = Convert.ToInt16(Convert.ToInt16((txtRegisterNumber.Text)) + 1);
@@ -191,8 +191,8 @@ namespace EX9_IndexerRegViaSDO
             short ObjectID;
             short SubIndex;
 
-            //CAN object ID for the Indexer Registers is 0x2600 (9728 decimal) 
-            ObjectID = 9728;
+            //CAN object ID for the Indexer Registers is 0x2600
+            ObjectID = 0x2600;
 
             //Each sub index of this object contains a register value.  Sub index 1 contains the value in register 0.
             SubIndex = Convert.ToInt16((Convert.ToInt16(txtRegisterNumber.Text)) + 1);
