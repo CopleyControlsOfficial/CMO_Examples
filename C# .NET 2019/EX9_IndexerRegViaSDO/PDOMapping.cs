@@ -215,10 +215,10 @@ namespace EX9_PDOMapping
                 rpdoOff.Init(0x301, rpdoPmap, rpdoObjID, rpdoObjIdSub, 255);
                 //
                 //**************************************************************************
-                //* Attach the TPDO to the node
-                //* CMO uses RPDO slots 0, 1, and 4 so I should use slot numbers 2, 3, 5-7.
+                //* Attach the RPDO to the node
+                //* CMO uses RPDO slots 0, so I should use slot numbers 1-7.
                 //**************************************************************************
-                amp.SetRpdo(2, rpdoOff);
+                amp.SetRpdo(1, rpdoOff);
 
                 // Start a thread to display values
                 displayTPDOdata = new Thread(DisplayOffset);
