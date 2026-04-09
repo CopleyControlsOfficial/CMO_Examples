@@ -158,10 +158,10 @@ namespace EX9_PDOMapping
                 //* 2 would cause it to be sent every second period, etc.
                 //**************************************************************************
                 // This function assumes all object IDs have a subindex of 0.
-                //tpdo.Init(0x20000001, tpdoPmap, tpdoObjID, 1); 
+                //tpdo.Init(0x381, tpdoPmap, tpdoObjID, 1); 
 
                 // This function allows non-zero subindexes.
-                tpdo.Init(0x20000001, tpdoPmap, tpdoObjID, tpdoObjIdSub, 1);
+                tpdo.Init(0x381, tpdoPmap, tpdoObjID, tpdoObjIdSub, 1);
                 // Optionally, the RTR can be turned off (Defaults to on). 0 turns it off and
                 // any non-zero value turns it back on.
                 //tpdo.SetRtrOk(0);
@@ -209,10 +209,10 @@ namespace EX9_PDOMapping
                 //* the PDO to be acted on immediately.
                 //**************************************************************************
                 // This function assumes all object IDs have a subindex of 0.
-                //rpdoOff.Init(0x20000101, rpdoPmap, rpdoObjID, 255);
+                //rpdoOff.Init(0x301, rpdoPmap, rpdoObjID, 255);
 
                 // This function allows non-zero subindexes.
-                rpdoOff.Init(0x20000101, rpdoPmap, rpdoObjID, rpdoObjIdSub, 255);
+                rpdoOff.Init(0x301, rpdoPmap, rpdoObjID, rpdoObjIdSub, 255);
                 //
                 //**************************************************************************
                 //* Attach the TPDO to the node
